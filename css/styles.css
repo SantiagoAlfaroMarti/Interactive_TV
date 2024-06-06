@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(187, 182, 182); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container {
+    border-radius: 0.3em;
+
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 4fr 1fr;
+    
+}
+
+/* //Características de la pantalla y marco */
+#screen {
+
+    height: 40em;
+    width: 70em;
+
+    border-radius: 0.3em;
+    border: 0.8em solid rgb(62, 57, 57);
+
+}
+
+/* //Pantalla de cristal */
+.basicScreen {
+    background-color: black;
+}
+
+/* //Mando a distancia */
+#general {
+
+    height: 30em;
+    width: 10em;
+
+    background-color: black;
+    
+    justify-content: center;
+    align-items: center;
+
+    border: 0.2em solid rgb(62, 57, 57);
+}
+
+#info {
+    height: 4em;
+    width: 8em;
+
+    color: white;
+    background-color: green;
+}
+
+#remote {
+    height: 30em;
+    width: 10em;
+
+    margin-right: 50em;
+
+}
+
+.off {
+    background-color: brown;
+
+}
+
+.on {
+    background-color: green;
+}
+
+.mini-remote {
+    height: 8m;
+    width: 6m;
+
+    margin: 1em;
+
+    background-color: rgb(178, 196, 228);
+}
