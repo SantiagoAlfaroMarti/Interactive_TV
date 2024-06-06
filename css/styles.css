@@ -1,89 +1,243 @@
 
 body {
-    margin: 0;
-    padding: 0;
 
-    height: 100vh;
-    width: 100vw;
+  margin: 0;
+  padding: 0;
 
-    background-color: rgb(187, 182, 182); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-sizing: content-box;
+  min-height: 100vh;
+  
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(114, 119, 116);
+}
+
+.container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#television {
+
+  height: 75vh;
+  width: 60vw;
+
+  background-color: black;
+  border: 0.5em solid rgb(55, 54, 54);
+  border-radius: 0.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pantalla {
+
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+
+  background-position: center;
+  box-sizing: content-box;
+}
+
+
+.mando {
+
+  height: 30em;
+  width: 12em;
+  
+  margin-left: 10em;
+  margin-top: 3em;
+  border-radius: 0.3em;
+  border: 0.3em solid rgb(55, 54, 54);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  box-sizing: content-box;
+  background-color: black;
+}
+
+
+.boton {
+
+  height: 2.8em;
+  width: 2.3em;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  box-sizing: content-box;
+  cursor: pointer;
+
+  border-radius: 0.4em;
+  font-weight: bold;
+  background-color: rgb(73, 71, 71);
 
 }
 
-#container {
-    border-radius: 0.3em;
+#swiched {
 
-    grid-gap: 1em;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 4fr 1fr;
-    
-}
+  height: 1em;
+  width: 7em;
 
-/* //Características de la pantalla y marco */
-#screen {
-
-    height: 40em;
-    width: 70em;
-
-    border-radius: 0.3em;
-    border: 0.8em solid rgb(62, 57, 57);
+  display: flex;
 
 }
 
-/* //Pantalla de cristal */
-.basicScreen {
-    background-color: black;
-}
+.OFF {
 
-/* //Mando a distancia */
-#general {
+  height: 2em;
+  width: 2em;
+  
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
 
-    height: 30em;
-    width: 10em;
-
-    background-color: black;
-    
-    justify-content: center;
-    align-items: center;
-
-    border: 0.2em solid rgb(62, 57, 57);
-}
-
-#info {
-    height: 4em;
-    width: 8em;
-
-    color: white;
-    background-color: green;
-}
-
-#remote {
-    height: 30em;
-    width: 10em;
-
-    margin-right: 50em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(197, 25, 25);
 
 }
 
-.off {
-    background-color: brown;
+.ON {
+
+  height: 2em;
+  width: 2em;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(32, 180, 27);
 
 }
 
-.on {
-    background-color: green;
+
+#changes {
+
+  height: 6em;
+  width: 10em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
-.mini-remote {
-    height: 8m;
-    width: 6m;
 
-    margin: 1em;
+#Volumen {
 
-    background-color: rgb(178, 196, 228);
+  height: 5.5em;
+  width: 2.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  border-radius: 0.4em;
+  background-color: rgb(73, 71, 71);
+}
+
+#Canales {
+
+  height: 5.5em;
+  width: 2.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  border-radius: 0.4em;
+  background-color: rgb(73, 71, 71);
+}
+
+#fila1 {
+  
+  height: 2em;
+  width: 8em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+
+}
+
+#fila2 {
+
+  height: 2em;
+  width: 8em;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+
+}
+
+#fila3 {
+
+  height: 2em;
+  width: 8em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
+
+}
+
+#canal {
+  
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0.5em;
+
+  color: rgb(78, 212, 225);
+}
+
+#date {
+
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0.5em;
+
+  color: rgb(78, 212, 225);
+}
+
+#hora {
+ 
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0.5em;
+
+  color: rgb(78, 212, 225);
 }

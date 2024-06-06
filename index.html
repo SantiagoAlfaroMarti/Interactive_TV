@@ -1,37 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV</title>
+    <title>Interactive TV</title>
 
     <link href="./css/styles.css" rel="stylesheet" />
 
 </head>
+
 <body>
 
-        <div id="screen" class="basicScreen">
-            <div id="screenFront">
-                <div id="info" class="hidden">
+    <div class="container-fluid">
+        <div class="container">
+            <div id="television">
+                <div id="pantalla">
+                    <div id="canal"></div>
+                    <div id="date"></div>
+                    <div id="hora"></div>
                 </div>
             </div>
-        </div>
-            <div id="general">
-                <div class="button power">O</div>
-                <div class="info">i</div>
-                <div class="mini-remote">1</div>
-                <div class="mini-remote">2</div>
-                <div class="mini-remote">3</div>
-                <div class="mini-remote">4</div>
-                <div class="mini-remote">5</div>
-                <div class="mini-remote">6</div>
-                <div class="mini-remote">7</div>
-                <div class="mini-remote">8</div>
-                <div class="mini-remote">9</div>
-        </div>
-       
 
-        <script src="./js/main.js"></script>
+            <div class="mando">
+                <div id="swiched">
+                    <div class="OFF" id="power"></div>
+                </div>
+                    <div class="i" id="information"></div>
+                <div id="changes">
+                    <div id="Volumen">Vol</div>
+                    <div id="Canales">Prg</div>
+                </div>
+                <div id="fila1">
+                    <div class="boton" id="boton1">1</div>
+                    <div class="boton" id="boton2">2</div>
+                    <div class="boton" id="boton3">3</div>
+                </div>
+                <div id="fila2">
+                    <div class="boton" id="boton4">4</div>
+                    <div class="boton" id="boton5">5</div>
+                    <div class="boton" id="boton6">6</div>
+                </div>
+                <div id="fila3">
+                    <div class="boton" id="boton7">7</div>
+                    <div class="boton" id="boton8">8</div>
+                    <div class="boton" id="boton9">9</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
