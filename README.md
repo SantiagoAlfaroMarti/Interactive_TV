@@ -4,11 +4,11 @@
 
 ## Index 📂
 
-- <a href="#description">Description</a>
-- <a href="#stack">Stack</a>
-- <a href="#features">Features</a>
-- <a href="#instalation">Instalation</a>
-- <a href="#author">Author</a>
+- <a href="#description">Description ⚓</a>
+- <a href="#stack">Stack 📚</a>
+- <a href="#features">Features 👾</a>
+- <a href="#instalation">Instalation 💾</a>
+- <a href="#author">Author ✒️</a>
 
 ## Description ⚓
 
@@ -19,7 +19,9 @@ functional user experience that simulates the interaction with a real television
 
 ## Stack 📚
 
-![Static Badge](https://img.shields.io/badge/HTML5-orange?style=flat-square) ![Static Badge](https://img.shields.io/badge/CSS3-blue?style=flat-square) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow?style=flat-square)
+![Static Badge](https://img.shields.io/badge/HTML5-orange?style=flat-square) 
+![Static Badge](https://img.shields.io/badge/CSS3-blue?style=flat-square)
+![Static Badge](https://img.shields.io/badge/JavaScript-yellowstyle=flat-square)
 
 ## Features 👾
 
