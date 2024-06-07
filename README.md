@@ -4,11 +4,11 @@
 
 ## Index 📂
 
-. <a href= "#description">Description⚓</a>
-. <a href= "#stack">Stack📚</a>
-. <a href= "#features">Features👾</a>
-. <a href= "#instalation">Instalation💾</a>
-. <a href= "#author">Author✒️</a>
+- <a href= "#description">Description⚓</a>
+- <a href= "#stack">Stack📚</a>
+- <a href= "#features">Features👾</a>
+- <a href= "#instalation">Instalation💾</a>
+- <a href= "#author">Author✒️</a>
 
 ## Description⚓
 
