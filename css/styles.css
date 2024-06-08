@@ -22,6 +22,7 @@ body {
   align-items: center;
 }
 
+/* TV */
 
 #television {
 
@@ -51,6 +52,7 @@ body {
   box-sizing: content-box;
 }
 
+/* Remote */
 
 .remote {
 
@@ -230,6 +232,7 @@ body {
   flex-direction: center;
 
 }
+/* Information TV */
 
 #channel {
   
