@@ -21,7 +21,7 @@ functional user experience that simulates the interaction with a real television
 
 ![Static Badge](https://img.shields.io/badge/HTML5-orange?style=flat-square)
 ![Static Badge](https://img.shields.io/badge/CSS3-blue?style=flat-square)
-![Static Badge](https://img.shields.io/badge/JavaScript-yellowstyle=flat-square)
+![Static Badge](https://img.shields.io/badge/JavaScript-yellows?style=flat-square)
 
 ## Features👾
 
