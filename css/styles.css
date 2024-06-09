@@ -9,11 +9,12 @@ body {
 
   box-sizing: content-box;
   min-height: 100vh;
-  
+
   background-size: cover;
   background-position: center;
-  background-color: rgb(69, 78, 63);
+  background-color: rgb(126, 220, 202);
 }
+
 
 .container {
 
@@ -22,24 +23,24 @@ body {
   align-items: center;
 }
 
-/* TV */
 
-#television {
+#television 
+{
 
-  height: 60vh;
+  height: 50vh;
   width: 40vw;
-
+  
   background-color: black;
-  border: 0.5em solid rgb(55, 54, 54);
-  border-radius: 0.8em;
-
+  
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#screen {
 
+#pantalla {
+  
   height: 100%;
   width: 100%;
   
@@ -50,34 +51,33 @@ body {
 
   background-position: center;
   box-sizing: content-box;
+  position: relative;
 }
 
-/* Remote */
 
-.remote {
+.mando {
 
   height: 30em;
-  width: 11em;
+  width: 13em;
   
   margin-left: 5em;
   margin-top: 0em;
   border-radius: 4em;
-  border: 0.3em solid rgb(55, 54, 54);
 
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-
+  
   box-sizing: content-box;
-  background-color: rgb(33, 32, 32);
+  background-color: rgb(77, 75, 75);
 }
 
 
-.button {
+.boton {
 
-  height: 2.8em;
-  width: 2.3em;
+  height: 4em;
+  width: 2.4em;
   
   display: flex;
   justify-content: space-around;
@@ -86,177 +86,422 @@ body {
   box-sizing: content-box;
   cursor: pointer;
 
-  border-radius: 0.6em;
+  border-radius: 0.5em;
   font-weight: bold;
-  background-color: rgb(73, 70, 70);
+
+  background-color: rgb(117, 114, 114);
 
 }
 
-#remote-menu {
+#swiched {
 
-  height: 0.8em;
-  width: 1.8em;
-
+  height: 0em;
+  width: 2.5em;
   display: flex;
-
 }
 
 .OFF {
 
-  height: 2em;
-  width: 2em;
+  height: 3em;
+  width: 3em;
   
   display: flex;
+  flex-direction: row;
   justify-content: start;
   align-items: center;
-  flex-direction: row;
 
   cursor: pointer;
   border-radius: 50%;
-  background-color: rgb(197, 25, 25);
+  
+  background-color: rgb(213, 81, 81);
 
 }
+
+
+.OFFtele {
+  img {
+      display: none;
+  }
+}
+
 
 .ON {
 
-  height: 2em;
-  width: 2em;
-
+  height: 3em;
+  width: 3em;
+  
   display: flex;
+  flex-direction: row;
   justify-content: start;
   align-items: center;
-  flex-direction: row;
 
   cursor: pointer;
   border-radius: 50%;
-  background-color: rgb(32, 180, 27);
+  
+  background-color: rgb(115, 185, 83);
+}
+
+.ONtele {
+
+  #ch1,
+  #ch2,
+  #ch3,
+  #ch4,
+  #ch5,
+  #ch6,
+  #ch7,
+  #ch8,
+  #ch9 {
+      display: none;
+  }
+
+  #inicio {
+
+      display: block;
+
+      height: 100%;
+      width: 100%;
+  }
+}
+
+.imagen {
+
+  height: 100%;
+  width: 100%;
+  
+  object-fit: cover;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+  border-radius: 0em
+}
+
+.texto {
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
 
 }
 
-.information {
+#changes {
 
   height: 2em;
-  width: 2em;
+  width: 14em;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-
-  cursor: pointer;
-  border-radius: 5em;
-  font-weight: bold;
-  background-color: rgb(73, 70, 70);
-
+  justify-content: space-around;
+  align-items: center;
 }
 
 
-#vol-prg {
+#Volumen {
 
   height: 5em;
-  width: 10em;
+  width: 3em;
 
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-direction: row;
-}
-
-
-#volumen {
-
-  height: 5em;
-  width: 2.5em;
-
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 
   font-weight: bold;
   cursor: pointer;
+  border-radius: 0.5em;
 
-  border-radius: 0.4em;
-  background-color: rgb(73, 70, 70);
+  background-color: rgb(118, 114, 114);
 }
 
-#channels {
+#Canales {
 
   height: 5em;
-  width: 2.5em;
+  width: 3em;
 
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 
   font-weight: bold;
   cursor: pointer;
+  border-radius: 0.5em;
 
-  border-radius: 0.4em;
-  background-color: rgb(73, 70, 70);
+  background-color: rgb(118, 114, 114);
 }
 
-#buttonsup {
-  
-  height: 2em;
-  width: 8em;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: center;
-
-}
-
-#middlebuttons {
+#fila1 {
 
   height: 2em;
-  width: 8em;
-  
+  width: 10.5em;
+
   display: flex;
+  flex-direction: center;
   justify-content: space-around;
   align-items: center;
-  flex-direction: center;
-
 }
 
-#buttonsdown {
+#fila2 {
 
   height: 2em;
-  width: 8em;
+  width: 10.5em;
 
   display: flex;
+  flex-direction: center;
   justify-content: space-around;
   align-items: center;
-  flex-direction: center;
-
 }
-/* Information TV */
 
-#channel {
-  
-  font-weight: bold;
-  font-size: 2em;
+#fila3 {
+
+  height: 2em;
+  width: 10.5em;
+
+  display: flex;
+  flex-direction: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#canal {
+
   margin: 0.5em;
 
-  color: rgb(78, 212, 225);
+  font-size: 2em;
+  
+  color: rgb(210, 213, 21);
+  
 }
 
 #date {
-
-  font-weight: bold;
-  font-size: 2em;
+  
   margin: 0.5em;
 
-  color: rgb(78, 212, 225);
+  font-size: 2em;
+  
+  color: rgb(210, 213, 21);
+  
 }
 
-#hour {
- 
-  font-weight: bold;
-  font-size: 2em;
+#hora {
+  
   margin: 0.5em;
 
-  color: rgb(78, 212, 225);
+  font-size: 2em;
+  
+  color: rgb(210, 213, 21);
+  
+}
+
+
+.ch1 {
+
+  #static,
+  #ch2,
+  #ch3,
+  #ch4,
+  #ch5,
+  #ch6,
+  #ch7,
+  #ch8,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch1 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch2 {
+
+  #static,
+  #ch1,
+  #ch3,
+  #ch4,
+  #ch5,
+  #ch6,
+  #ch7,
+  #ch8,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch2 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch3 {
+
+  #static,
+  #ch1,
+  #ch2,
+  #ch4,
+  #ch5,
+  #ch6,
+  #ch7,
+  #ch8,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch3 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch4 {
+
+  #static,
+  #ch1,
+  #ch2,
+  #ch3,
+  #ch5,
+  #ch6,
+  #ch7,
+  #ch8,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch4 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch5 {
+
+  #static,
+  #ch1,
+  #ch2,
+  #ch3,
+  #ch4,
+  #ch6,
+  #ch7,
+  #ch8,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch5 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch6 {
+
+  #static,
+  #ch1,
+  #ch2,
+  #ch3,
+  #ch4,
+  #ch5,
+  #ch7,
+  #ch8,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch6 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch7 {
+
+  #static,
+  #ch1,
+  #ch2,
+  #ch3,
+  #ch4,
+  #ch5,
+  #ch6,
+  #ch8,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch7 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch8 {
+
+  #static,
+  #ch1,
+  #ch2,
+  #ch3,
+  #ch4,
+  #ch5,
+  #ch6,
+  #ch7,
+  #ch9 {
+
+      display: none;
+  }
+
+  #ch8 {
+
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+.ch9 {
+
+  #static,
+  #ch1,
+  #ch2,
+  #ch3,
+  #ch4,
+  #ch5,
+  #ch6,
+  #ch7,
+  #ch8 {
+
+      display: none;
+  }
+
+  #ch9 {
+    
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
 }

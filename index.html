@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive TV</title>
+
     <link href="./css/styles.css" rel="stylesheet" />
+
 </head>
+
 <body>
+
     <div class="container-fluid">
-        <div class="container">
-            <div id="television">
-                <div id="screen" class="OFFTV">
-                    <div id="channel" class="text"></div>
-                    <div id="date" class="text"></div>
-                    <div id="hour" class="text"></div>
-                    <img id="start" class="image" src="./img/starttv.webp" />
-                    <img id="ch1" class="image" src="./img/channel1.webp" />
-                    <img id="ch2" class="image" src="./img/channel2.webp" />
-                    <img id="ch3" class="image" src="./img/channel3.webp" />
-                    <img id="ch4" class="image" src="./img/channel4.webp" />
-                    <img id="ch5" class="image" src="./img/channel5.webp" />
-                    <img id="ch6" class="image" src="./img/channel6.webp" />
-                    <img id="ch7" class="image" src="./img/channel7.webp" />
-                    <img id="ch8" class="image" src="./img/channel8.webp" />
-                    <img id="ch9" class="image" src="./img/channel9.webp" />
+        <div class="container"> 
+            <div id="television"> 
+                <div id="pantalla" class="OFFtele">
+                    <div id="canal" class="texto"></div>
+                    <div id="date" class="texto"></div>  
+                    <div id="hora" class="texto"></div>
+                    <img id="inicio" class="imagen" src="./img/starttv.webp" />
+                    <img id="ch1" class="imagen" src="./img/channel1.webp" />
+                    <img id="ch2" class="imagen" src="./img/channel2.webp" />    
+                    <img id="ch3" class="imagen" src="./img/channel3.webp" />
+                    <img id="ch4" class="imagen" src="./img/channel4.webp" /> 
+                    <img id="ch5" class="imagen" src="./img/channel5.webp" />
+                    <img id="ch6" class="imagen" src="./img/channel6.webp" /> 
+                    <img id="ch7" class="imagen" src="./img/channel7.webp" />
+                    <img id="ch8" class="imagen" src="./img/channel8.webp" />
+                    <img id="ch9" class="imagen" src="./img/channel9.webp" />
                 </div>
             </div>
 
-            <div class="remote">
-                <div id="remote-menu">
-                    <div class="OFF" id="power"></div>
-                </div>  
-                <div id="vol-prg">
-                    <div id="volumen">Vol</div>
-                    <div class="information" id="info">i</div>
-                    <div id="channels">Prg</div>
+            <div class="mando">  
+                <div id="swiched">
+                    <div class="OFF" id="power"></div> 
                 </div>
-                <div id="buttonsup">
-                    <div class="button" id="button1">1</div>
-                    <div class="button" id="button2">2</div>
-                    <div class="button" id="button3">3</div>
+                <div id="changes">
+                    <div id="Volumen">+<br>Vol<br>-</div>   
+                    <div id="Canales">+<br>Prg<br>-</div>
                 </div>
-                <div id="middlebuttons">
-                    <div class="button" id="button4">4</div>
-                    <div class="button" id="button5">5</div>
-                    <div class="button" id="button6">6</div>
+                <div id="fila1">
+                    <div class="boton" id="boton1">1</div>
+                    <div class="boton" id="boton2">2</div> 
+                    <div class="boton" id="boton3">3</div>
                 </div>
-                <div id="buttonsdown">
-                    <div class="button" id="button7">7</div>
-                    <div class="button" id="button8">8</div>
-                    <div class="button" id="button9">9</div>
+                <div id="fila2">
+                    <div class="boton" id="boton4">4</div>
+                    <div class="boton" id="boton5">5</div>
+                    <div class="boton" id="boton6">6</div>
+                </div>
+                <div id="fila3">
+                    <div class="boton" id="boton7">7</div>
+                    <div class="boton" id="boton8">8</div>
+                    <div class="boton" id="boton9">9</div>
                 </div>
             </div>
 
@@ -59,6 +63,8 @@
 
 
     <script src="./js/main.js"></script>
+
+    
 </body>
 
 </html>
