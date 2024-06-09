@@ -31,11 +31,14 @@ body {
   width: 40vw;
   
   background-color: black;
+  border: 0.5em solid rgb(20, 20, 20);
   
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  
 }
 
 
@@ -61,8 +64,8 @@ body {
   width: 13em;
   
   margin-left: 5em;
-  margin-top: 0em;
-  border-radius: 4em;
+  margin-top: 0.2em;
+  border-radius: 1em;
 
   display: flex;
   flex-direction: column;
@@ -71,6 +74,8 @@ body {
   
   box-sizing: content-box;
   background-color: rgb(77, 75, 75);
+
+  border-radius: 1;
 }
 
 
@@ -102,8 +107,8 @@ body {
 
 .OFF {
 
-  height: 3em;
-  width: 3em;
+  height: 2em;
+  width: 2em;
   
   display: flex;
   flex-direction: row;
@@ -127,8 +132,8 @@ body {
 
 .ON {
 
-  height: 3em;
-  width: 3em;
+  height: 2em;
+  width: 2em;
   
   display: flex;
   flex-direction: row;
