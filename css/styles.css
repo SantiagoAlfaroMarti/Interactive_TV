@@ -12,7 +12,7 @@ body {
 
   background-size: cover;
   background-position: center;
-  background-color: rgb(126, 220, 202);
+  background-color: solid white;
 }
 
 
@@ -24,29 +24,28 @@ body {
 }
 
 
-#television 
-{
+#tv {
 
   height: 50vh;
   width: 40vw;
-  
+
   background-color: black;
   border: 0.5em solid rgb(20, 20, 20);
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  
+
 }
 
 
-#pantalla {
-  
+#screen {
+
   height: 100%;
   width: 100%;
-  
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -58,11 +57,11 @@ body {
 }
 
 
-.mando {
+.remote {
 
   height: 30em;
   width: 13em;
-  
+
   margin-left: 5em;
   margin-top: 0.2em;
   border-radius: 1em;
@@ -71,19 +70,20 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
+
   box-sizing: content-box;
   background-color: rgb(77, 75, 75);
 
   border-radius: 1;
+  
 }
 
 
-.boton {
+.button {
 
   height: 4em;
   width: 2.4em;
-  
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -105,11 +105,11 @@ body {
   display: flex;
 }
 
-.OFF {
+.off {
 
   height: 2em;
   width: 2em;
-  
+
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -117,24 +117,24 @@ body {
 
   cursor: pointer;
   border-radius: 50%;
-  
+
   background-color: rgb(213, 81, 81);
 
 }
 
 
-.OFFtele {
+.off-tv {
   img {
-      display: none;
+    display: none;
   }
 }
 
 
-.ON {
+.on {
 
   height: 2em;
   width: 2em;
-  
+
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -142,11 +142,11 @@ body {
 
   cursor: pointer;
   border-radius: 50%;
-  
+
   background-color: rgb(115, 185, 83);
 }
 
-.ONtele {
+.on-tv {
 
   #ch1,
   #ch2,
@@ -157,23 +157,23 @@ body {
   #ch7,
   #ch8,
   #ch9 {
-      display: none;
+    display: none;
   }
 
-  #inicio {
+  #home {
 
-      display: block;
+    display: block;
 
-      height: 100%;
-      width: 100%;
+    height: 100%;
+    width: 100%;
   }
 }
 
-.imagen {
+.image {
 
   height: 100%;
   width: 100%;
-  
+
   object-fit: cover;
   position: absolute;
 
@@ -184,7 +184,7 @@ body {
   border-radius: 0em
 }
 
-.texto {
+.text {
 
   flex-direction: row;
   align-items: center;
@@ -206,7 +206,7 @@ body {
 }
 
 
-#Volumen {
+#volume {
 
   height: 5em;
   width: 3em;
@@ -223,7 +223,7 @@ body {
   background-color: rgb(118, 114, 114);
 }
 
-#Canales {
+#channels {
 
   height: 5em;
   width: 3em;
@@ -240,7 +240,7 @@ body {
   background-color: rgb(118, 114, 114);
 }
 
-#fila1 {
+#line1 {
 
   height: 2em;
   width: 10.5em;
@@ -251,7 +251,7 @@ body {
   align-items: center;
 }
 
-#fila2 {
+#line2 {
 
   height: 2em;
   width: 10.5em;
@@ -262,7 +262,7 @@ body {
   align-items: center;
 }
 
-#fila3 {
+#line3 {
 
   height: 2em;
   width: 10.5em;
@@ -278,29 +278,29 @@ body {
   margin: 0.5em;
 
   font-size: 2em;
-  
+
   color: rgb(210, 213, 21);
-  
+
 }
 
 #date {
-  
+
   margin: 0.5em;
 
   font-size: 2em;
-  
+
   color: rgb(210, 213, 21);
-  
+
 }
 
 #hora {
-  
+
   margin: 0.5em;
 
   font-size: 2em;
-  
+
   color: rgb(210, 213, 21);
-  
+
 }
 
 
@@ -316,14 +316,14 @@ body {
   #ch8,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch1 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -339,14 +339,14 @@ body {
   #ch8,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch2 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -362,14 +362,14 @@ body {
   #ch8,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch3 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -385,14 +385,14 @@ body {
   #ch8,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch4 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -408,14 +408,14 @@ body {
   #ch8,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch5 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -431,14 +431,14 @@ body {
   #ch8,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch6 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -454,14 +454,14 @@ body {
   #ch8,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch7 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -477,14 +477,14 @@ body {
   #ch7,
   #ch9 {
 
-      display: none;
+    display: none;
   }
 
   #ch8 {
 
-      display: block;
-      width: 100%;
-      height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -500,13 +500,13 @@ body {
   #ch7,
   #ch8 {
 
-      display: none;
+    display: none;
   }
 
   #ch9 {
-    
-      display: block;
-      width: 100%;
-      height: 100%;
+
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }

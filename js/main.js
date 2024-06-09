@@ -1,25 +1,25 @@
 let power = document.getElementById("power");
 let encendido = false;
 
-let boton = document.getElementsByClassName("boton");
-let arrayBoton = Array.from(boton)           
+let button = document.getElementsByClassName("button");
+let arraybutton = Array.from(button)           
 
 let date = document.getElementById("date")
 let hora = document.getElementById("hora")
 let fecha = new Date();
 
-let pantalla = document.getElementById("pantalla");
+let screen = document.getElementById("screen");
 
 
-for (let i = 0; i < arrayBoton.length; i++) {   
-    arrayBoton[i].addEventListener("click", () => {   
+for (let i = 0; i < arraybutton.length; i++) {   
+    arraybutton[i].addEventListener("click", () => {   
 
         hora.style.visibility = "visible";
         date.style.visibility = "visible"; 
         canal.style.visibility = "visible";
 
         if (encendido) {
-            pantalla.classList.replace(pantalla.classList[0], `ch${i + 1}`);
+            screen.classList.replace(screen.classList[0], `ch${i + 1}`);
             canal.innerHTML = `Canal ${i + 1}`                             
             hora.innerHTML = fecha.toLocaleTimeString();
             date.innerHTML = fecha.toLocaleDateString();
@@ -28,7 +28,7 @@ for (let i = 0; i < arrayBoton.length; i++) {
                 hora.style.visibility = "hidden";
                 date.style.visibility = "hidden"; 
                 canal.style.visibility = "hidden";
-            }, 8000);
+            }, 10000);
         }
 
     })
@@ -41,10 +41,10 @@ power.addEventListener("click", () => {
     hora.style.visibility = "visible";
     date.style.visibility = "visible";
 
-    power.classList.toggle("ON")
+    power.classList.toggle("on")
     encendido = !encendido
     if (encendido) {      
-        pantalla.classList.replace(pantalla.classList[0], "ONtele");
+        screen.classList.replace(screen.classList[0], "on-tv");
         hora.innerHTML = fecha.toLocaleTimeString();                    
         date.innerHTML = fecha.toLocaleDateString();                    
 
@@ -55,7 +55,7 @@ power.addEventListener("click", () => {
         }, 8000);
 
     } else {
-        pantalla.classList.replace(pantalla.classList[0], "OFFtele");
+        screen.classList.replace(screen.classList[0], "off-tv");
         hora.innerHTML = ""
         date.innerHTML = ""                                      
         canal.innerHTML = ""                                      
